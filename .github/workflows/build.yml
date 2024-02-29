@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: windows
-          path: app/electron_dist
+          path: app/dist_electron
   linux:
     name: "Linux"
     runs-on: ubuntu-latest
@@ -49,5 +49,5 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
         with:
-          name: windows
-          path: app/electron_dist
+          name: linux
+          path: app/dist_electron
