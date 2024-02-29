@@ -19,8 +19,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-        env:
-          NODE_OPTIONS: "--openssl-legacy-provider"
+      - run: echo 'NODE_OPTIONS="--openssl-legacy-provider"' >> $GITHUB_ENV
       - name: Install dependencies
         run: npm i
         working-directory: app
@@ -42,8 +41,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-        env:
-          NODE_OPTIONS: "--openssl-legacy-provider"
+      - run: echo 'NODE_OPTIONS="--openssl-legacy-provider"' >> $GITHUB_ENV
       - name: Install dependencies
         run: npm i
         working-directory: app
