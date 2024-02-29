@@ -19,13 +19,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - run: echo 'NODE_OPTIONS="--openssl-legacy-provider"' >> $GITHUB_ENV
       - name: Install dependencies
         run: npm i
         working-directory: app
       - name: Build
         run: npm run electron:build
         working-directory: app
+        env:
+          NODE_OPTIONS: "--openssl-legacy-provider"
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
@@ -41,13 +42,14 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
-      - run: echo 'NODE_OPTIONS="--openssl-legacy-provider"' >> $GITHUB_ENV
       - name: Install dependencies
         run: npm i
         working-directory: app
       - name: Build
         run: npm run electron:build
         working-directory: app
+        env:
+          NODE_OPTIONS: "--openssl-legacy-provider"
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
