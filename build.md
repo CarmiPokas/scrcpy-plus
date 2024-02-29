@@ -1,5 +1,5 @@
 # Build
-- Node 18
+- Node 20
 
 ## Windows
 - $env:NODE_OPTIONS = "--openssl-legacy-provider"
