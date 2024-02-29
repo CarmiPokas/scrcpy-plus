@@ -29,7 +29,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: windows
-          path: app/dist_electron
+          path: app/dist_electron/win-unpacked
   linux:
     name: "Linux"
     runs-on: ubuntu-latest
@@ -50,4 +50,4 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: linux
-          path: app/dist_electron
+          path: app/dist_electron/linux-unpacked
