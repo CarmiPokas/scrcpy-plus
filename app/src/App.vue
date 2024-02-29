@@ -1,8 +1,6 @@
 <template>
   <nav>
-    <span>Development Stuff (Ignore): </span>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Home</router-link>
   </nav>
   <router-view/>
 </template>
@@ -14,5 +12,8 @@
 .section {
   margin: 1em;
   width: calc(100% - 2em);
+}
+.accent-text {
+  filter: brightness(0.5);
 }
 </style>
