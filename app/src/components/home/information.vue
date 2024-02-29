@@ -12,7 +12,8 @@
     </div>
 
     <div class="card-actions justify-end">
-      <button class="btn btn-primary">Button</button>
+      <button class="btn">Join the Discord</button>
+      <button class="btn btn-primary">Settings</button>
     </div>
   </div>
 </div>
@@ -20,10 +21,10 @@
 
 <script>
 export default {
-    data() {
-        return {
-            scrcpyPlusVersion: this.$version
-        }
+  data() {
+    return {
+      scrcpyPlusVersion: this.$version
     }
+  }
 }
 </script>

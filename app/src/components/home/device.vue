@@ -26,9 +26,7 @@
             }
         },
         methods: {
-            deselect() {
-                for (const i in this.devices) this.devices[i].selected = false;
-            },
+            deselect() { for (const i in this.devices) this.devices[i].selected = false; },
             select(device, index) {
                 this.deselect();
                 this.devices[index].selected = true;
