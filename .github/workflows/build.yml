@@ -23,7 +23,7 @@ jobs:
         run: npm i
         working-directory: app
       - name: Build
-        run: npm run electron:build
+        run: $env:NODE_OPTIONS = "--openssl-legacy-provider" && npm run electron:build
         working-directory: app
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
