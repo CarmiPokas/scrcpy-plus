@@ -1,15 +1,16 @@
 <template>
   <div class="home">
     <information />
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <device />
   </div>
 </template>
 
 <script>
-import information from '@/components/home/information.vue'
+import information from '@/components/home/information.vue';
+import device from '@/components/home/device.vue';
 
 export default {
   name: 'HomeView',
-  components: { information }
+  components: { information, device }
 }
 </script>

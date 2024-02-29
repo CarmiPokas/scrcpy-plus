@@ -1,6 +1,9 @@
-import { createApp } from 'vue'
+import { createApp } from 'vue';
+import { version } from '../package.json';
 import App from './App.vue'
 import router from './router'
 import './app.css';
 
-createApp(App).use(router).mount('#app')
+const app = createApp(App);
+app.use(router).mount('#app');
+app.config.globalProperties.$version = version;

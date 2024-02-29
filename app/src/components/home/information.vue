@@ -1,5 +1,5 @@
 <template>
-<div class="card w-full bg-base-300 shadow-xl">
+<div class="card section bg-base-300 shadow-xl">
   <div class="card-body">
 
     <div class="flex">
@@ -22,7 +22,7 @@
 export default {
     data() {
         return {
-            scrcpyPlusVersion: '3.0.0-pre'
+            scrcpyPlusVersion: this.$version
         }
     }
 }
